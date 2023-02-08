@@ -59,5 +59,54 @@ pip install sympy
 pip install mpmath
 
 ```
+
+
 ## How to Use
+
+### yawnoc.py
+
+To launch the game of life you must run yawnoc at the anaconda prompt, there are several game modes available:
+
+ - **Casual Mode (0)**: No additional sound associated with each game state will be played, this is traditional Conway game of life.
  
+ - **Melodic Piano (1)**: Each state of the game will play a specific musical note within two octaves through a classical piano.
+ 
+ - **Armonic Piano (2)**: Each state of the game will play a root state triad chord belonging to a specific major or minor key through a classical piano.
+ 
+ - **Rhytmic Drums (3)**: Each state of the game will play a sound produced by a Roland TR 808 drums set, including bassDrum, snare, hihat, tum, or the silence itself.
+ 
+ - **Melodic Violin (4)**: Each state of the game will play a specific musical note within two octaves through a classical piano.
+ 
+ - **Melodic Bass (5)**: Each state of the game will play a specific musical note within two octaves through a TEK bass.
+ 
+ 
+ 
+ The dimensions of the window and the board of the game of life must be indicated as a parameter in the following way:
+
+```
+python yawnoc.py [musical Approach] [window's Dimension] [universe's Dimension]
+```
+where:
+
+-   [musical Approach] is the game mode chosen from those mentioned above.
+-   [window's Dimension] is the dimensions in pixels that the window will have. For the time being, the X and the Y axis will have the same value, therefore creating a square window.
+-   [universe's Dimension] is the amount of cells that the univere will contain on each side of the grid.
+
+For instance, if you want to run the Game of Life in melodicPiano mode, on a  800×800  window and a  100×100  grid you should run:
+
+```
+python yawnoc.py 1 800 100
+```
+
+
+This program includes the following key and mouse commands to control and manage the game:
+
+-   Left click: when clicking a cell you reverse its state from dead to alive and vice versa.
+
+-   "C" key: performs a clear action,changing the state of all cells to dead .
+-   "R" key: performs a random action, changing the states of all cells to a random one.
+-   "Space" key: performs a blizzard action, turning dynamic mode on or off. In dynamic mode, the states are constantly updated, while in static mode actions can be carried out with more precision.
+
+-   ⬆  key: speeds up the rate at which the next game state is updated.
+-   ⬇  key: decelerates the rate at which the next game state is updated.
+-   ➡  key: if the game is in static mode the cellular automaton will evolve to its following state.
