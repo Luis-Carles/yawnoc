@@ -60,10 +60,7 @@ pip install mpmath
 
 ```
 
-
-## How to Use
-
-### yawnoc.py
+## yawnoc.py
 
 To launch the game of life you must run yawnoc at the anaconda prompt, there are several game modes available:
 
@@ -110,3 +107,50 @@ This program includes the following key and mouse commands to control and manage
 -   ⬆  key: speeds up the rate at which the next game state is updated.
 -   ⬇  key: decelerates the rate at which the next game state is updated.
 -   ➡  key: if the game is in static mode the cellular automaton will evolve to its following state.
+
+
+
+## finder.py
+To launch the pattern finder, the following command must be launched:
+```
+python finder.py
+```
+Instructions for indicating the search parameters appear in the console. It should be noted that finding the desired pattern is not guaranteed, the longer the desired melodic/harmonic/rhythmic pattern is, the more unlikely it will be to find an initial state of the game of life that can model it. That is why it is recommended to search by measures/notes and not by complete patterns.
+
+
+## BLACKPINK - Shut Down model
+
+To play the Shut Down model, each of the four tracks of the song must be released individually. For **Windows** users, in order to avoid problems with the OpenGL graphic engine, the use of different Python [virtual environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#) is recommended.
+So each environment runs the go.py, go2.py, go3.py and go4.py launchers respectively.
+```
+env1/python go.py
+env2/python go2.py
+env3/python go3.py
+env4/python go4.py
+```
+
+If you want to make the anaconda prompt corresponding to each environment disappear so as not to bother visually, you can use .bat and .vbs files as follows:
+
+**melodicPiano.bat**:
+```
+cd [absolute path to the python file's directory]
+
+cls
+
+[absolute path to the virtual python environment] python go.py
+```
+
+**melodicPiano.VBS**:
+```
+Set WshShell = CreateObject("WScript.Shell")
+
+WshShell.Run chr(34) & [absolute path to .bat file] & Chr(34), 0
+
+Set WshShell = Nothing
+
+```
+
+And run each .VBS file simultaneously to start playing the model.
+
+
+
