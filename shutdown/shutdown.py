@@ -9,7 +9,7 @@ n = 0.09
 sounds = "\yamahap45.sf2"
 sounds3 = "\drums"
 sounds4 = "\R-violin.sf2"
-sounds5 = "\TEK bass.sf2"                     # jazzbass.sf2: 1
+sounds5 = "\TEK bass.sf2"                     
 sounds6 = "\pizzicato2.sf2"                   # 45
 
 def piano():
@@ -557,7 +557,7 @@ def drumsPizzicatos():
     [3,3,3,3,3,3]]
   #######################################################################
    
-    # pizzicatos pattern
+    # pizzicatos pattern x3.5
     for j in range(len(pattern)-1):
         for k in range(len(pattern[j])):
 
