@@ -1,0 +1,9 @@
+mingus
+sympy
+mpmath
+fluidsynth
+pyfluidsynth
+pygame
+pyOPpeng
+PyOpenGL‑3.1.6‑cp38‑cp38‑win_amd64.whl
+pPyOpenGL_accelerate‑3.1.6‑cp38‑cp38‑win_amd64.whl
